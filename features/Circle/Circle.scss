@@ -19,14 +19,14 @@
   }
 
   .point {
+    box-sizing: border-box;
     position: absolute;
     width: 56px;
     height: 56px;
     background-color: #42567a;
     border-radius: 50%;
-    transform: translate(-50%, -50%) scale(0.1);
+    transform: translate(-50%, -50%) scale(0.107);
     border: 1px solid rgba(48, 62, 88, 0.5);
-    transition: all 0.4s ease;
     cursor: pointer;
 
     .point-content {
@@ -38,12 +38,11 @@
       font-weight: 400;
       font-size: 20px;
       line-height: 30px;
-      transform: translate(-50%, -50%);
-      transition: opacity 0.2s ease 0.1s;
+      transform: translate(-50%, -50%) scale(1);
       // user-select: none;
     }
 
-    &:hover {
+    &.active-point {
       transform: translate(-50%, -50%) scale(1);
       background-color: #f4f5f9;
 
@@ -51,5 +50,14 @@
         opacity: 1;
       }
     }
+
+    // &:hover {
+    //   transform: translate(-50%, -50%) scale(1);
+    //   background-color: #f4f5f9;
+
+    //   .point-content {
+    //     opacity: 1;
+    //   }
+    // }
   }
 }

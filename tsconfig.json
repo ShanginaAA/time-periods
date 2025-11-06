@@ -16,6 +16,6 @@
     "jsx": "react-jsx",
     "outDir": "./dist/"
   },
-  "include": ["src", "components", "features"],
+  "include": ["src/app", "components", "features"],
   "exclude": ["node_modules", "dist"]
 }

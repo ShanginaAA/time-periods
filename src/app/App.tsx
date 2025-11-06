@@ -1,5 +1,5 @@
 import React from 'react';
-import Circle from '../features/Circle';
+import Circle from '../../features/Circle';
 
 const App: React.FC = () => {
   return (
@@ -20,14 +20,6 @@ const App: React.FC = () => {
       </div>
 
       <Circle />
-      {/* <div className="ellipse-dot ellipse-dot-one"></div>
-        <div className="ellipse-dot ellipse-dot-two"></div>
-        <div className="ellipse-dot ellipse-dot-three"></div>
-        <div className="ellipse-dot ellipse-dot-four"></div>
-        <div className="ellipse-dot ellipse-dot-five"></div>
-        <div className="ellipse-dot ellipse-dot-six"></div>
-
-        <div className="ellipse-select ellipse-select-three"></div> */}
     </div>
   );
 };
